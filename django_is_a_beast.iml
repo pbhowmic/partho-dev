@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="django" name="Django">
+      <configuration>
+        <option name="rootFolder" value="$MODULE_DIR$/examples" />
+        <option name="settingsModule" value="settings.py" />
+        <option name="manageScript" value="manage.py" />
+        <option name="environment" value="&lt;map/&gt;" />
+        <option name="doNotUseTestRunner" value="false" />
+        <option name="trackFilePattern" value="migrations" />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -10,6 +22,58 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
-    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/furo/theme/furo" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/furo/theme/furo/sidebar" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/furo/theme/furo/partials" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/forms/jinja2/django/forms/widgets" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/forms/templates/django/forms/widgets" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/views/templates" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/gis/templates/gis" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/gis/templates/gis/admin" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/auth/templates/auth/widgets" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admin/templates/admin" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admin/templates/admin/auth/user" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admin/templates/admin/widgets" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admin/templates/admin/includes" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admin/templates/admin/edit_inline" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admin/templates/registration" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/postgres/jinja2/postgres/widgets" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/postgres/templates/postgres/widgets" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/django/contrib/admindocs/templates/admin_doc" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/epub" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/agogo" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/basic" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/basic/changes" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/haiku" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/nonav" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/classic" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/pyramid" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/scrolls" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx/themes/bizstyle" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/alabaster" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/docs" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/docs/auth" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/docs/langs" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/admin" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/inline" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/filters" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/vertical" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/horizontal" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/rest_framework/templates/rest_framework/pagination" />
+        <option value="$MODULE_DIR$/venv/lib/python3.9/site-packages/sphinx_rtd_theme" />
+        <option value="$MODULE_DIR$/_build/html" />
+        <option value="$MODULE_DIR$/_build/html/blog" />
+        <option value="$MODULE_DIR$/_build/html/venv/lib/python3.9/site-packages/sphinx/ext/autosummary/templates/autosummary" />
+        <option value="$MODULE_DIR$/_build/html/venv/lib/python3.9/site-packages/pytz-2021.1.dist-info" />
+        <option value="$MODULE_DIR$/_build/html/venv/lib/python3.9/site-packages/Jinja2-3.0.1.dist-info" />
+        <option value="$MODULE_DIR$/_build/html/venv/lib/python3.9/site-packages/imagesize-1.2.0.dist-info" />
+        <option value="$MODULE_DIR$/_build/html/venv/lib/python3.9/site-packages/alabaster-0.7.12.dist-info" />
+        <option value="$MODULE_DIR$/_build/html/venv/lib/python3.9/site-packages/MarkupSafe-2.0.1.dist-info" />
+      </list>
+    </option>
   </component>
 </module>

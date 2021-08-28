@@ -3,7 +3,7 @@ from django.views.generic.base import TemplateView, View
 
 
 # Create your views here.
-class HellowWorldView(TemplateView):
+class HelloWorldView(TemplateView):
     template_name = 'helloworld.html'
 
     def get(self, request: HttpRequest, *args, **kwargs):

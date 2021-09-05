@@ -1,0 +1,21 @@
+Storing session data
+--------------------
+
+Session objects can be used to store arbitrary data. Doing so causes the session object to be saved to DB but the
+``sessionid`` cookie is unchanged.
+
+    ..
+        interaction unless it absolutely has to or it is explicitly asked to.
+
+        Now one must ask the question when does a session end?
+
+        Is it enough to close the browser?
+        Or is it when there is no user activity for a period of time?
+        If the user closes the browser and then comes back and re-engages with the website, is it the start of a new session
+        or the continuation of a new one?
+        The short answer is "it depends". It depends on both the browser being used and the webserver.
+        Django typically uses session management by way of a cookie. Sometimes it is just an identifier.
+        Other times, it may be a signed cookie. It depends on which session backend was configured.
+
+        It is possible to set things at the server end that `requests` that the browser clear the session information.
+        The browser may ignore that. So that's no good.

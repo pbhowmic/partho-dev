@@ -91,10 +91,10 @@ but I digress.
 Here are a few factoids about sessions that are obvious to most but not to some (and I have seen some bizarre code by
 those who are oblivious):
 
-#. As you might have guessed, the ``sessionid`` you see in the cookies section is has a value that is used as the primary key for the ``Session`` object in the DB.
-#. A returning client is identified by the ``sessionid`` cookie. If the client resets the cookie, Django will think it is a new client interating with it and will potentially assign it a new ``sessionid`` cookie and create a new ``Session`` object in the DB. I say potentially because as I said earlier, Django needs a reason to be assigned a cookie.
+#. As you might have guessed, the ``sessionid`` you see in the cookies section has a value that is used as the primary key for the ``Session`` object in the DB.
+#. A returning client is identified by the ``sessionid`` cookie. If the client resets the cookie, Django will think it is a new client interating with it and will potentially assign it a new ``sessionid`` cookie and create a new ``Session`` object in the DB. I say potentially because as I said earlier, Django needs a reason to track the session.
 #. Django sessions are server-based. They are not set on a per-view basis or a per-app basis (by which I mean a Django app as will be listed in ``INSTALLED_APPS`` in ``settings.py``). If the client visits say a view that has been mapped to a relative URL ``/hello/world`` on a server and then it visits a different view that maps on to the relative URL ``/hello/world2`` on the same server, the ``sessionid`` cookie remains unchanged.
-#. Session objects have an age associated with them. It is governed by ``SESSION_COOKIE_AGE`` variable in ``settings.py`` It defaults to 2 weeks. The expiration age is expressed in number of seconds. If the there is no activity between the client and server for that many seconds, the session is considered stale and all data on the server associated with that sessionid will be marked unusable (we will expand on this in the subsequent section)
+#. ``Session`` objects have an age associated with them. It is governed by ``SESSION_COOKIE_AGE`` variable in ``settings.py`` It defaults to 2 weeks. The expiration age is expressed in number of seconds. If there is no activity between the client and server for that many seconds, the session is considered stale and all data on the server associated with that sessionid will be marked unusable (we will expand on this in the subsequent section)
 #. One thing Django never explicitly states - and I feel it ought to do so - is that the session cookie expiration resets everytime a client re-interacts with the server.
 #. Django sessions survive server restarts. This is because they the ``Session`` objects are persisted either to cache or DB.
 
@@ -146,6 +146,6 @@ template view will always start at 0 when the session is first established - the
 `'counter'` so the variable `counter` gets the default value 0 but from thereon, as long as the session is unexpired,
 the counter will keep incrementing. If, however, the session expires - just wait more than 30 secs
 between any two refreshes - you will see the counter reset to 0 because the older session gets marked as stale and
-is replaced by a fresh session whihc also means the value of the key `'counter'` associated with the old session is
-lost and the new session starts off like the old session: there is no value associated with the key `'counter'`.
+is replaced by a fresh session which also means the value of the key `'counter'` associated with the old session is
+lost and the new session starts off like the older session did: there is no value associated with the key `'counter'`.
 

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor client
+boundary "Django instance 1" as d1
+boundary "Django instance 2" as d2
+
+client -> d1: First Request
+d1 -> tmp1: Write session f
+d1 --> client: First Response (setup session)
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml

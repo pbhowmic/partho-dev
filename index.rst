@@ -12,3 +12,4 @@ documentation but instead aims to do a deep dive into aspects of Django.
    :caption: Blog entries:
 
    blog/sessions
+   blog/sessions2

@@ -13,3 +13,4 @@ documentation but instead aims to do a deep dive into aspects of Django.
 
    blog/sessions
    blog/sessions2
+   blog/spellingbee

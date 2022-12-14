@@ -17,3 +17,4 @@ In addition
    blog/sessions
    blog/sessions2
    blog/spellingbee
+   blog/estimate_pi

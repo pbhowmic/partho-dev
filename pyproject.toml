@@ -11,14 +11,18 @@ mkdocs = "^1.4.2"
 Django = "^4.1"
 sphinx = "^5.3.0"
 sphinx-rtd-theme = "^1.1.1"
-
-[tool.poetry.dev-dependencies]
+cython = "^0.29.32"
+wheel = "^0.38.4"
+ipython = "^8.7.0"
+numpy = "^1.23.5"
+matplotlib = "^3.6.2"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.991"
 isort = "^5.10.1"
 black = "^22.10.0"
 flake8 = "^6.0.0"
+matplotlib = "^3.6.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

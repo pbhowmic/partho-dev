@@ -17,13 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Django is a beast'
-copyright = '2021, Partho Bhowmick'
+project = 'Musings of a damned dev'
+copyright = '2021-22, Partho Bhowmick'
 author = 'Partho Bhowmick'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -33,6 +32,7 @@ release = '1.0'
 extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
+    'sphinx.ext.imgmath',
     'sphinx_rtd_theme',
 ]
 
@@ -43,7 +43,6 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv']
-
 
 # -- Options for HTML output -------------------------------------------------
 

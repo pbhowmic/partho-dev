@@ -14,10 +14,8 @@ In addition
    :maxdepth: 1
    :caption: Blog entries:
 
-   blog/sessions
-   blog/sessions2
-   blog/spellingbee
-   blog/estimate_pi
-   blog/estimate_pi_mcse
-   blog/estimate_pi_mcse
-   blog/estimate_pi_mcse
+   sessions
+   sessions2
+   spellingbee
+   estimate_pi
+   estimate_pi_mcse

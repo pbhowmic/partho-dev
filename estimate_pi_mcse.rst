@@ -17,12 +17,12 @@ So, let us tweak the previous program to change the function `estimate_pi()`
 .. code-block:: python
     :linenos:
 
-def estimate_pi(n=1000000):
-    nums = 2 * np.random.random_sample((n, 2)) - 1.0
-    n = len(nums)
-    insides = np.array([1 if inside_circle(x, y) else 0 for x, y in nums])
-    mean = np.mean(insides)
-    sd = np.std(insides)
-    return 4 * mean, 4 * sd/sqrt(n)
+    def estimate_pi(n=1000000):
+        nums = 2 * np.random.random_sample((n, 2)) - 1.0
+        n = len(nums)
+        insides = np.array([1 if inside_circle(x, y) else 0 for x, y in nums])
+        mean = np.mean(insides)
+        sd = np.std(insides)
+        return 4 * mean, 4 * sd/sqrt(n)
 
 

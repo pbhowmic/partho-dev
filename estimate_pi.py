@@ -1,3 +1,5 @@
+from math import sqrt
+
 import numpy as np
 
 
@@ -11,7 +13,7 @@ def estimate_pi(n=1000000):
     insides = np.array([1 if inside_circle(x, y) else 0 for x, y in nums])
     mean = np.mean(insides)
     sd = np.std(insides)
-    return 4 * mean, 4 * sd
+    return 4 * mean, 4 * sd / sqrt(n)
 
 
 if __name__ == "__main__":

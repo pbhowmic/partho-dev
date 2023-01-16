@@ -18,3 +18,6 @@ In addition
    blog/sessions2
    blog/spellingbee
    blog/estimate_pi
+   blog/estimate_pi_mcse
+   blog/estimate_pi_mcse
+   blog/estimate_pi_mcse
